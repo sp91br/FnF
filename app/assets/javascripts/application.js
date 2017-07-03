@@ -13,3 +13,9 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+$('.collapse').collapse()
+
+$('#current_goal').collapse({
+  toggle: false
+})
