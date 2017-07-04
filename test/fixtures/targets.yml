@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  goal: MyString
+  days: 1
+  doer: one
+
+two:
+  goal: MyString
+  days: 1
+  doer: two

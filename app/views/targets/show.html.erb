@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @target.goal %>
+</p>
+
+<p>
+  <strong>Days:</strong>
+  <%= @target.days %>
+</p>
+
+<p>
+  <strong>Doer:</strong>
+  <%= @target.doer %>
+</p>
+
+<%= link_to 'Edit', edit_target_path(@target) %> |
+<%= link_to 'Back', targets_path %>
