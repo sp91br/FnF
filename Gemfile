@@ -23,6 +23,8 @@ gem 'rails', '~> 5.1.2'
 # simplification of the code above to this below
 gem 'pg'
 
+gem 'hirb'
+
 
 
 

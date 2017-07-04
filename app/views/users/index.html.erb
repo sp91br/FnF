@@ -17,10 +17,13 @@
   <tbody>
 
     <p>
+      <% @users.each do |user| %>
+      <td><%= image_tag user.image %></td>
+      <% end %>
       <a class="current_goal" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <% @users.each do |user| %>
-        <%= user.title %>
+        <%= user.title.last %>
         <% end %>
       </button>
       </a>
@@ -31,8 +34,8 @@
         <tr>
           <!--
         <td><%= user.subtitle %></td>
-        <td><%= user.info %></td>
-        <td><%= image_tag user.url %></td> -->
+        <td><%= user.info %></td>-->
+        <td><%= image_tag user.url %></td>
         <td><%= image_tag user.image %></td>
         <td><a><%= user.description %></a></td>
         <!-- <td><%= link_to 'Show MileStone Details', user %></td> -->
